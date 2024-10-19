@@ -6,7 +6,7 @@ export default function IndexScreen({ navigation }) {
     <View style={styles.container}>
       <Image
         style={{width: 300, height: 300, resizeMode: 'contain'}}
-        source={require('./assets/ESP.jpg')}
+        source={require('../assets/ESP.jpg')}
       />
       <Text style={{marginTop: 1}}></Text>
       <Text style={{...styles.header, fontSize: 18, fontWeight: 'bold', fontFamily: 'Inter'}}>Welcome to ESP app</Text>
@@ -21,7 +21,10 @@ export default function IndexScreen({ navigation }) {
         onPress={() => navigation.navigate('Login')}>
         <Text style={{color: '#fff', fontFamily: 'Inter-Bold', fontSize: 16, fontWeight:'bold'}}>Login</Text>
       </TouchableOpacity>
-      <Text style={{marginTop: 40, color: '#1E73BE', fontSize: 16, fontWeight: 'bold'}}>Create an account</Text>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Register')}>
+        <Text style={{marginTop: 40, color: '#1E73BE', fontSize: 16, fontWeight: 'bold'}}>Create an account</Text>
+      </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
 
