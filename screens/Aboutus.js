@@ -29,22 +29,22 @@ export default function AboutusScreen({ navigation }) {
           </Text> 
           <View style={{width: '80%', alignSelf: 'center', height: 150, backgroundColor: 'transparent', marginTop: 20, borderRadius: 20, zIndex: 1000, marginBottom: -60}}>
             <Image
-              style={{width: 150, height: 150, borderRadius: 75, alignSelf: 'center', marginTop: 20, borderWidth: 2, borderColor: 'white'}}
-              source={require('../assets/ESP.jpg')}
+              style={{width: 150, height: 150, borderRadius: 75, alignSelf: 'center', marginTop: 20, borderWidth: 2, borderColor: 'white', backgroundColor: 'white'}}
+              source={require('../assets/Avila.jpg')}
             />
           </View>
           <View style={{width: '85%', alignSelf: 'center', height: 220, backgroundColor: 'transparent', marginTop: 20}}>
             <Image
               style={{width: '100%', height: '100%', borderRadius: 20, position: 'absolute', top: 0, left: 0}}
-              source={require('../assets/ESP.jpg')}
+              source={require('../assets/bg1.jpg')}
             />
-            <Text style={{fontSize: 18, color: 'black', textAlign: 'center', fontWeight: 'bold', marginTop: 70}}>
+            <Text style={{fontSize: 18, color: 'white', textAlign: 'center', fontWeight: 'bold', marginTop: 70}}>
               Kenneth Ivan M. Avila
             </Text>
-            <Text style={{fontSize: 18, color: 'black', textAlign: 'center', marginTop: 5}}>
+            <Text style={{fontSize: 18, color: 'white', textAlign: 'center', marginTop: 5}}>
               Group Leader - Backend Dev       
             </Text>
-            <View style={{width: '90%', height: 2, backgroundColor: 'black', marginTop: 30, marginBottom: 10, alignSelf: 'center'}}/>
+            <View style={{width: '90%', height: 2, backgroundColor: 'white', marginTop: 30, marginBottom: 10, alignSelf: 'center'}}/>
             <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 style={{width: 30, height: 30, marginRight: 10, borderRadius: 15}}
@@ -62,22 +62,22 @@ export default function AboutusScreen({ navigation }) {
           </View>
           <View style={{width: '80%', alignSelf: 'center', height: 150, backgroundColor: 'transparent', marginTop: 20, borderRadius: 20, zIndex: 1000, marginBottom: -60}}>
             <Image
-              style={{width: 150, height: 150, borderRadius: 75, alignSelf: 'center', marginTop: 20, borderWidth: 2, borderColor: 'white'}}
-              source={require('../assets/ESP.jpg')}
+              style={{width: 150, height: 150, borderRadius: 75, alignSelf: 'center', marginTop: 20, borderWidth: 2, borderColor: 'white', backgroundColor: 'white'}}   
+              source={require('../assets/Jerico.jpg')}
             />
           </View>
           <View style={{width: '85%', alignSelf: 'center', height: 220, backgroundColor: 'transparent', marginTop: 20}}>
             <Image
               style={{width: '100%', height: '100%', borderRadius: 20, position: 'absolute', top: 0, left: 0}}
-              source={require('../assets/ESP.jpg')}
+              source={require('../assets/bg2.jpg')}
             />
-            <Text style={{fontSize: 18, color: 'black', textAlign: 'center', fontWeight: 'bold', marginTop: 70}}>
-              Kenneth Ivan M. Avila
+            <Text style={{fontSize: 18, color: 'white', textAlign: 'center', fontWeight: 'bold', marginTop: 70}}>
+              Jerico S. Evangelista
             </Text>
-            <Text style={{fontSize: 18, color: 'black', textAlign: 'center', marginTop: 5}}>
-              Group Leader - Backend Dev       
+            <Text style={{fontSize: 18, color: 'white', textAlign: 'center', marginTop: 5}}>
+              Color Theory - UI/UX Designer      
             </Text>
-            <View style={{width: '90%', height: 2, backgroundColor: 'black', marginTop: 30, marginBottom: 10, alignSelf: 'center'}}/>
+            <View style={{width: '90%', height: 2, backgroundColor: 'white', marginTop: 30, marginBottom: 10, alignSelf: 'center'}}/>
             <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 style={{width: 30, height: 30, marginRight: 10, borderRadius: 15}}
@@ -95,22 +95,22 @@ export default function AboutusScreen({ navigation }) {
           </View>
           <View style={{width: '80%', alignSelf: 'center', height: 150, backgroundColor: 'transparent', marginTop: 20, borderRadius: 20, zIndex: 1000, marginBottom: -60}}>
             <Image
-              style={{width: 150, height: 150, borderRadius: 75, alignSelf: 'center', marginTop: 20, borderWidth: 2, borderColor: 'white'}}
-              source={require('../assets/ESP.jpg')}
+              style={{width: 150, height: 150, borderRadius: 75, alignSelf: 'center', marginTop: 20, borderWidth: 2, borderColor: 'white', backgroundColor: 'white'}}
+              source={require('../assets/Colinares.jpg')}
             />
           </View>
           <View style={{width: '85%', alignSelf: 'center', height: 220, backgroundColor: 'transparent', marginTop: 20}}>
             <Image
               style={{width: '100%', height: '100%', borderRadius: 20, position: 'absolute', top: 0, left: 0}}
-              source={require('../assets/ESP.jpg')}
+              source={require('../assets/blackbg.jpg')}
             />
-            <Text style={{fontSize: 18, color: 'black', textAlign: 'center', fontWeight: 'bold', marginTop: 70}}>
-              Kenneth Ivan M. Avila
+            <Text style={{fontSize: 18, color: 'white', textAlign: 'center', fontWeight: 'bold', marginTop: 70}}>
+              Eduardo Colinares
             </Text>
-            <Text style={{fontSize: 18, color: 'black', textAlign: 'center', marginTop: 5}}>
-              Group Leader - Backend Dev       
+            <Text style={{fontSize: 18, color: 'white', textAlign: 'center', marginTop: 5}}>
+              Spacing       
             </Text>
-            <View style={{width: '90%', height: 2, backgroundColor: 'black', marginTop: 30, marginBottom: 10, alignSelf: 'center'}}/>
+            <View style={{width: '90%', height: 2, backgroundColor: 'white', marginTop: 30, marginBottom: 10, alignSelf: 'center'}}/>
             <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 style={{width: 30, height: 30, marginRight: 10, borderRadius: 15}}
@@ -128,22 +128,22 @@ export default function AboutusScreen({ navigation }) {
           </View>
           <View style={{width: '80%', alignSelf: 'center', height: 150, backgroundColor: 'transparent', marginTop: 20, borderRadius: 20, zIndex: 1000, marginBottom: -60}}>
             <Image
-              style={{width: 150, height: 150, borderRadius: 75, alignSelf: 'center', marginTop: 20, borderWidth: 2, borderColor: 'white'}}
-              source={require('../assets/ESP.jpg')}
+              style={{width: 150, height: 150, borderRadius: 75, alignSelf: 'center', marginTop: 20, borderWidth: 2, borderColor: 'white', backgroundColor: 'white'}}
+              source={require('../assets/Tanauan.jpg')}
             />
           </View>
           <View style={{width: '85%', alignSelf: 'center', height: 220, backgroundColor: 'transparent', marginTop: 20}}>
             <Image
               style={{width: '100%', height: '100%', borderRadius: 20, position: 'absolute', top: 0, left: 0}}
-              source={require('../assets/ESP.jpg')}
+              source={require('../assets/blackbg.jpg')}
             />
-            <Text style={{fontSize: 18, color: 'black', textAlign: 'center', fontWeight: 'bold', marginTop: 70}}>
-              Kenneth Ivan M. Avila
+            <Text style={{fontSize: 18, color: 'white', textAlign: 'center', fontWeight: 'bold', marginTop: 70}}>
+              Emanuel Tanauan
             </Text>
-            <Text style={{fontSize: 18, color: 'black', textAlign: 'center', marginTop: 5}}>
-              Group Leader - Backend Dev       
+            <Text style={{fontSize: 18, color: 'white', textAlign: 'center', marginTop: 5}}>
+              Typography       
             </Text>
-            <View style={{width: '90%', height: 2, backgroundColor: 'black', marginTop: 30, marginBottom: 10, alignSelf: 'center'}}/>
+            <View style={{width: '90%', height: 2, backgroundColor: 'white', marginTop: 30, marginBottom: 10, alignSelf: 'center'}}/>
             <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 style={{width: 30, height: 30, marginRight: 10, borderRadius: 15}}
@@ -161,22 +161,22 @@ export default function AboutusScreen({ navigation }) {
           </View>
           <View style={{width: '80%', alignSelf: 'center', height: 150, backgroundColor: 'transparent', marginTop: 20, borderRadius: 20, zIndex: 1000, marginBottom: -60}}>
             <Image
-              style={{width: 150, height: 150, borderRadius: 75, alignSelf: 'center', marginTop: 20, borderWidth: 2, borderColor: 'white'}}
-              source={require('../assets/ESP.jpg')}
+              style={{width: 150, height: 150, borderRadius: 75, alignSelf: 'center', marginTop: 20, borderWidth: 2, borderColor: 'white', backgroundColor: 'white'}}
+              source={require('../assets/Nonato.jpg')}
             />
           </View>
           <View style={{width: '85%', alignSelf: 'center', height: 220, backgroundColor: 'transparent', marginTop: 20}}>
             <Image
               style={{width: '100%', height: '100%', borderRadius: 20, position: 'absolute', top: 0, left: 0}}
-              source={require('../assets/ESP.jpg')}
+              source={require('../assets/blackbg.jpg')}
             />
-            <Text style={{fontSize: 18, color: 'black', textAlign: 'center', fontWeight: 'bold', marginTop: 70}}>
-              Kenneth Ivan M. Avila
+            <Text style={{fontSize: 18, color: 'white', textAlign: 'center', fontWeight: 'bold', marginTop: 70}}>
+              Ranz Joshua Nonato 
             </Text>
-            <Text style={{fontSize: 18, color: 'black', textAlign: 'center', marginTop: 5}}>
-              Group Leader - Backend Dev       
+            <Text style={{fontSize: 18, color: 'white', textAlign: 'center', marginTop: 5}}>
+              60-30-10 rule        
             </Text>
-            <View style={{width: '90%', height: 2, backgroundColor: 'black', marginTop: 30, marginBottom: 10, alignSelf: 'center'}}/>
+            <View style={{width: '90%', height: 2, backgroundColor: 'white', marginTop: 30, marginBottom: 10, alignSelf: 'center'}}/>
             <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 style={{width: 30, height: 30, marginRight: 10, borderRadius: 15}}
@@ -194,22 +194,22 @@ export default function AboutusScreen({ navigation }) {
           </View>
           <View style={{width: '80%', alignSelf: 'center', height: 150, backgroundColor: 'transparent', marginTop: 20, borderRadius: 20, zIndex: 1000, marginBottom: -60}}>
             <Image
-              style={{width: 150, height: 150, borderRadius: 75, alignSelf: 'center', marginTop: 20, borderWidth: 2, borderColor: 'white'}}
-              source={require('../assets/ESP.jpg')}
+              style={{width: 150, height: 150, borderRadius: 75, alignSelf: 'center', marginTop: 20, borderWidth: 2, borderColor: 'white', backgroundColor: 'white'}}
+              source={require('../assets/Cristobal.jpg')}
             />
           </View>
           <View style={{width: '85%', alignSelf: 'center', height: 220, backgroundColor: 'transparent', marginTop: 20}}>
             <Image
               style={{width: '100%', height: '100%', borderRadius: 20, position: 'absolute', top: 0, left: 0}}
-              source={require('../assets/ESP.jpg')}
+              source={require('../assets/blackbg.jpg')}
             />
-            <Text style={{fontSize: 18, color: 'black', textAlign: 'center', fontWeight: 'bold', marginTop: 70}}>
-              Kenneth Ivan M. Avila
+            <Text style={{fontSize: 18, color: 'white', textAlign: 'center', fontWeight: 'bold', marginTop: 70}}>
+              Jhon Mark Gatao Cristobal 
             </Text>
-            <Text style={{fontSize: 18, color: 'black', textAlign: 'center', marginTop: 5}}>
-              Group Leader - Backend Dev       
+            <Text style={{fontSize: 18, color: 'white', textAlign: 'center', marginTop: 5}}>
+              User Persona       
             </Text>
-            <View style={{width: '90%', height: 2, backgroundColor: 'black', marginTop: 30, marginBottom: 10, alignSelf: 'center'}}/>
+            <View style={{width: '90%', height: 2, backgroundColor: 'white', marginTop: 30, marginBottom: 10, alignSelf: 'center'}}/>
             <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
               <Image
                 style={{width: 30, height: 30, marginRight: 10, borderRadius: 15}}
