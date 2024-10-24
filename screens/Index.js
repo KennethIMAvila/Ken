@@ -18,11 +18,23 @@ export default function IndexScreen({ navigation }) {
       <Text style={{textAlign: 'center', marginBottom: 50, fontSize: 15}}>kindness, and integrity.</Text>
       <TouchableOpacity
         style={{width: 280, height: 50, backgroundColor: '#1E73BE', borderRadius: 50, justifyContent: 'center', alignItems: 'center'}}
-        onPress={() => navigation.navigate('Login')}>
+        onPress={() => {
+          navigation.navigate('Login');
+          navigation.reset({
+            index: 0,
+            routes: [{name: 'Login'}],
+          });
+        }}>
         <Text style={{color: '#fff', fontSize: 16, fontWeight:'bold'}}>Login</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => navigation.navigate('Register')}>
+        onPress={() => {
+          navigation.navigate('Register');
+          navigation.reset({
+            index: 0,
+            routes: [{name: 'Register'}],
+          });
+        }}>
         <Text style={{marginTop: 40, color: '#1E73BE', fontSize: 16, fontWeight: 'bold'}}>Create an account</Text>
       </TouchableOpacity>
       <StatusBar style="auto" />

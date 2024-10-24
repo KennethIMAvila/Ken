@@ -3,10 +3,27 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 export default function DashboardScreen({ navigation }) {
   return (
     <View style={[styles.container, {backgroundColor: '#5C55D1'}]}> 
-    <Text style={{fontSize: 16, fontWeight: 'bold', marginBottom: 15, color: '#fff', paddingLeft: 20, marginTop: 50, position: 'absolute', top: '5%'}}>Welcome to ESP App!</Text>
+    <View style={{flexDirection: 'row', alignItems: 'center', position: 'absolute', top: '5%', paddingLeft: 20, marginTop: 50}}>
+      <Text style={{fontSize: 16, fontWeight: 'bold', color: '#fff'}}>Welcome to ESP App!</Text>
+      <TouchableOpacity onPress={() => {
+        navigation.navigate('Index');
+        navigation.reset({
+          index: 0,
+          routes: [{name: 'Index'}],
+        });
+      }} style={{marginLeft: 100}}>
+        <Image source={require('../assets/logout.png')} style={{width: 30, height: 30, marginRight: 10, tintColor: 'red'}} />
+      </TouchableOpacity>
+    </View>
     <View style={{flexDirection: 'row', position: 'absolute', top: '15%', width: '100%', justifyContent: 'space-between', alignItems: 'center', paddingHorizontal: 20}}>
       <Text style={{fontSize: 14, color: '#fff'}}>Today's journey to being better</Text>
-      <TouchableOpacity onPress={() => navigation.navigate('Aboutus')}>
+      <TouchableOpacity onPress={() => {
+        navigation.navigate('Aboutus');
+        navigation.reset({
+          index: 0,
+          routes: [{name: 'Aboutus'}],
+        });
+      }}>
         <Text style={{fontSize: 16, color: '#fff'}}>About us</Text>
         <View style={{borderBottomWidth: 1, borderBottomColor: '#fff', width: '100%', marginTop: 5}}></View>
       </TouchableOpacity>
@@ -16,14 +33,14 @@ export default function DashboardScreen({ navigation }) {
         <Text style={{fontSize: 18, fontWeight: 'bold', color: '#655CF0'}}>Today's Topic</Text>
         <Text style={{fontSize: 14 , color: 'black'}}>Being Honest in Daily Life</Text>
         <View style={{backgroundColor: '#655CF0', marginTop: 15, alignItems: 'flex-end', width: 100, borderRadius: 50}}>
-          <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center'}}>
+          <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center'}} onPress={() => alert('Work in progress, Frontend Only!')}>
             <Text style={{fontSize: 12, fontWeight: 'bold', color: '#fff', padding: 5}}>Start</Text>
             <Image source={require('../assets/arrow.png')} style={{width: 20, height: 20, tintColor: 'white', marginEnd: 10}}/>
           </TouchableOpacity>
         </View>
       </View>
       <View style={{borderWidth: 1, borderColor: 'lightgray', borderRadius: 10, padding: 10, marginBottom: 10, flexDirection: 'row', alignItems: 'center'}}>
-        <Image source={require('../assets/ESP.jpg')} style={{width: 75, height: 75, marginRight: 20, marginLeft: 10}}/>
+        <Image source={require('../assets/d1.jpg')} style={{width: 75, height: 75, borderRadius: 37.5, marginRight: 20, marginLeft: 10}}/>
         <View>
           <Text style={{fontSize: 14, fontWeight: 'bold', color: '#655CF0'}}>Values We Live By</Text>
           <Text style={{fontSize: 12, color: 'black'}}>
@@ -35,7 +52,7 @@ export default function DashboardScreen({ navigation }) {
         </View>
       </View>
       <View style={{borderWidth: 1, borderColor: 'lightgray', borderRadius: 10, padding: 10, marginBottom: 10, flexDirection: 'row', alignItems: 'center'}}>
-        <Image source={require('../assets/ESP.jpg')} style={{width: 75, height: 75, marginRight: 20, marginLeft: 10}}/>
+        <Image source={require('../assets/d2.jpg')} style={{width: 75, height: 75, borderRadius: 37.5, marginRight: 20, marginLeft: 10}}/>
         <View>
           <Text style={{fontSize: 14, fontWeight: 'bold', color: '#655CF0'}}>Making Good Choices</Text>
           <Text style={{fontSize: 12, color: 'black'}}>
@@ -47,7 +64,7 @@ export default function DashboardScreen({ navigation }) {
         </View>
       </View>
       <View style={{borderWidth: 1, borderColor: 'lightgray', borderRadius: 10, padding: 10, marginBottom: 10, flexDirection: 'row', alignItems: 'center'}}>
-        <Image source={require('../assets/ESP.jpg')} style={{width: 75, height: 75, marginRight: 20, marginLeft: 10}}/>
+        <Image source={require('../assets/d3.jpg')} style={{width: 75, height: 75, borderRadius: 37.5, marginRight: 20, marginLeft: 10}}/>
         <View>
           <Text style={{fontSize: 14, fontWeight: 'bold', color: '#655CF0'}}>Beign Good Friend</Text>
           <Text style={{fontSize: 12, color: 'black'}}>
@@ -59,7 +76,7 @@ export default function DashboardScreen({ navigation }) {
         </View>
       </View>
       <View style={{borderWidth: 1, borderColor: 'lightgray', borderRadius: 10, padding: 10, marginBottom: 10, flexDirection: 'row', alignItems: 'center'}}>
-        <Image source={require('../assets/ESP.jpg')} style={{width: 75, height: 75, marginRight: 20, marginLeft: 10}}/>
+        <Image source={require('../assets/d4.jpg')} style={{width: 75, height: 75, borderRadius: 37.5, marginRight: 20, marginLeft: 10}}/>
         <View>
           <Text style={{fontSize: 14, fontWeight: 'bold', color: '#655CF0'}}>My Progress</Text>
           <Text style={{fontSize: 12, color: 'black'}}>
