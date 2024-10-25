@@ -8,16 +8,18 @@ export default function LoginScreen({ navigation }) {
       <Text style={styles.subheader}>Sign in to enjoy our app</Text>
       <View style={{marginTop: 20}}>
         <Text style={styles.eatext}>Email Address</Text>
-        <TextInput style={styles.input} onChangeText={(email) => loginemail = email}/>
+        <TextInput style={styles.input} onChangeText={(email) => this.email = email}/>
         <View style={styles.pfpflex}>
           <Text style={styles.ptext}>Password</Text>
           <TouchableOpacity onPress={() => alert('Work in progress, Frontend Only!')}>
             <Text style={{color: '#1E73BE'}}>Forgot Password?</Text>
           </TouchableOpacity>
         </View>
-        <TextInput style={styles.input} secureTextEntry={this.secureTextEntry} onChangeText={(password) => loginpassword = password}/>
+        <TextInput style={styles.input} secureTextEntry={true} onChangeText={(password) => this.password = password}/>
         <TouchableOpacity style={styles.loginbutton} onPress={() => {
-          if (loginemail !== '' && loginpassword !== '') {
+          if (this.email !== '' && this.password !== '') {
+            this.email = '';
+            this.password = '';
             navigation.navigate('Dashboard');
             alert('Login successful');
             navigation.reset({

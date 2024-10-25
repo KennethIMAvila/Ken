@@ -7,11 +7,11 @@ export default function RegisterScreen({ navigation }) {
       <Text style={styles.header}>Create an account</Text>
       <View style={{marginTop: 20}}>
         <Text style={styles.neatext}>Name</Text>
-        <TextInput style={styles.input} onChangeText={(name) => regname = name}/>
+        <TextInput style={styles.input} onChangeText={(name) => this.name = name}/>
         <Text style={styles.neatext}>Email Address</Text>
-        <TextInput style={styles.input} onChangeText={(email) => regemail = email}/>
+        <TextInput style={styles.input} onChangeText={(email) => this.email = email}/>
         <Text style={styles.neatext}>Password</Text>
-        <TextInput style={styles.input} secureTextEntry={true} onChangeText={(password) => regpassword = password}/>
+        <TextInput style={styles.input} secureTextEntry={true} onChangeText={(password) => this.password = password}/>
         <View style={styles.tosflex}>
           <Text style={styles.tostext}>By continuing you agree to our</Text>
           <TouchableOpacity onPress={() => alert('Work in progress, Frontend Only!')}>
@@ -19,7 +19,10 @@ export default function RegisterScreen({ navigation }) {
           </TouchableOpacity>
         </View>
         <TouchableOpacity style={styles.signupbutton} onPress={() => {
-          if (regname !== '' && regemail !== '' && regpassword !== '') {
+          if (this.name !== '' && this.email !== '' && this.password !== '') {
+            this.name = ''; 
+            this.email = '';
+            this.password = '';
             navigation.navigate('Login');
             alert('Registration successful');
             navigation.reset({
