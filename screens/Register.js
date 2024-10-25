@@ -4,27 +4,24 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from "reac
 export default function RegisterScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={{fontSize: 25, fontWeight: 'bold', textAlign: 'left',marginBottom: 15 }}>Create an account</Text>
+      <Text style={styles.header}>Create an account</Text>
       <View style={{marginTop: 20}}>
-        <Text style={{fontSize: 15, marginBottom: 10, fontWeight: 'bold'}}>Name</Text>
-        <TextInput style={{padding : 10, height: 40, borderColor: '#e5e5e5', borderWidth: 1, borderRadius: 10, marginBottom: 20}} onChangeText={(name) => this.name = name}/>
-        <Text style={{fontSize: 15, marginBottom: 10, fontWeight: 'bold'}}>Email Address</Text>
-        <TextInput style={{padding : 10, height: 40, borderColor: '#e5e5e5', borderWidth: 1, borderRadius: 10, marginBottom: 20}} onChangeText={(email) => this.email = email}/>
-        <Text style={{fontSize: 15, fontWeight: 'bold'}}>Password</Text>
-        <TextInput style={{padding : 10, height: 40, borderColor: '#e5e5e5', borderWidth: 1, borderRadius: 10}} secureTextEntry={true} onChangeText={(password) => this.password = password}/>
-        <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginTop: 20, }}>
-          <Text style={{color: '#000000', fontSize: 11}}>By continuing you agree to our</Text>
+        <Text style={styles.neatext}>Name</Text>
+        <TextInput style={styles.input} onChangeText={(name) => regname = name}/>
+        <Text style={styles.neatext}>Email Address</Text>
+        <TextInput style={styles.input} onChangeText={(email) => regemail = email}/>
+        <Text style={styles.neatext}>Password</Text>
+        <TextInput style={styles.input} secureTextEntry={true} onChangeText={(password) => regpassword = password}/>
+        <View style={styles.tosflex}>
+          <Text style={styles.tostext}>By continuing you agree to our</Text>
           <TouchableOpacity onPress={() => alert('Work in progress, Frontend Only!')}>
-            <Text style={{color: '#1E73BE', fontWeight: 'bold', fontSize: 11}}> terms of service.</Text>
+            <Text style={styles.tostextlink}> terms of service.</Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity style={{backgroundColor: '#1E73BE', padding: 13, borderRadius: 50, marginTop: 20, alignItems: 'center'}} onPress={() => {
-          if (this.name !== '' && this.email !== '' && this.password !== '') {
+        <TouchableOpacity style={styles.signupbutton} onPress={() => {
+          if (regname !== '' && regemail !== '' && regpassword !== '') {
             navigation.navigate('Login');
-            this.name = '';
-            this.email = '';
-            this.password = '';
-            alert('Account created successfully');
+            alert('Registration successful');
             navigation.reset({
               index: 0,
               routes: [{name: 'Login'}],
@@ -33,28 +30,22 @@ export default function RegisterScreen({ navigation }) {
             alert('Please fill in the required fields');
           }
         }}>
-          <Text style={{color: '#fff', fontWeight: 'bold'}}>Sign Up</Text>
+          <Text style={styles.signupbuttontext}>Sign Up</Text>
         </TouchableOpacity>
       </View> 
-        <View style={{flexDirection: 'row', alignItems: 'center', marginVertical: 30}}>
-          <View style={{flex: 1, height: 1, backgroundColor: '#e5e5e5'}}/>
-          <Text style={{width: 150, textAlign: 'center', fontSize: 15, color: '#666'}}>Or sign in with</Text>
-          <View style={{flex: 1, height: 1, backgroundColor: '#e5e5e5'}}/>
+        <View style={styles.optionflex}>
+          <View style={styles.line}/>
+          <Text style={styles.midtext}>Or sign in with</Text>
+          <View style={styles.line}/>
         </View>
-      <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginTop: 20}}>
-        <TouchableOpacity style={{backgroundColor: '#E8E8E8', padding: 13, borderRadius: 50, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', width: '100%'}} onPress={() => alert('Work in progress, Frontend Only!')}>
-            <Image source={require('../assets/googlelogo.png')} style={{width: 20, height: 20, marginRight: 10}}/>     
-            <Text style={{color: '#1E73BE', fontWeight: 'bold'}}>Continue with Google</Text>
+      <View style={styles.googleflex}>
+        <TouchableOpacity style={styles.googlebutton} onPress={() => alert('Work in progress, Frontend Only!')}>
+            <Image source={require('../assets/googlelogo.png')} style={styles.googlelogo}/>     
+            <Text style={styles.googlebuttontext}>Continue with Google</Text>
         </TouchableOpacity>
       </View>
-      <TouchableOpacity onPress={() => {
-        navigation.navigate('Login');
-        navigation.reset({
-          index: 0,
-          routes: [{name: 'Login'}],
-        });
-      }}>
-        <Text style={{marginTop: 40, color: '#000000', fontSize: 15, textAlign: 'center'}}>Already have an account? <Text style={{color: '#1E73BE', fontWeight: 'bold'}}>Sign in here</Text></Text>
+      <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+        <Text style={styles.logintext}>Already have an account? <Text style={styles.logintextlink}>Sign in here</Text></Text>
       </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
@@ -68,4 +59,99 @@ const styles = StyleSheet.create({
     padding: 30,
     justifyContent: "center",
   },
+  header: {
+    fontSize: 25, 
+    fontWeight: 'bold', 
+    textAlign: 'left',
+    marginBottom: 15
+  },
+  neatext: {
+    fontSize: 15, 
+    marginBottom: 10, 
+    fontWeight: 'bold'
+  },
+  input: {
+    padding : 10, 
+    height: 40, 
+    borderColor: '#e5e5e5', 
+    borderWidth: 1, 
+    borderRadius: 10, 
+    marginBottom: 10
+  },
+  tosflex: {
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    marginTop: 20
+  },
+  tostext: {
+    color: '#000000', 
+    fontSize: 11
+  },
+  tostextlink: {
+    color: '#1E73BE', 
+    fontWeight: 'bold', 
+    fontSize: 11
+  },
+  signupbutton: {
+    backgroundColor: '#1E73BE', 
+    padding: 13, 
+    borderRadius: 50, 
+    marginTop: 20, 
+    alignItems: 'center'
+  },
+  signupbuttontext: {
+    color: '#fff', 
+    fontWeight: 'bold'
+  },
+  optionflex: {
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    marginVertical: 30
+  }, 
+  line: {
+    flex: 1, 
+    height: 1, 
+    backgroundColor: '#e5e5e5'
+  },
+  midtext: {
+    width: 150, 
+    textAlign: 'center', 
+    fontSize: 15, 
+    color: '#666'
+  },
+  googleflex: {
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    marginTop: 20
+  }, 
+  googlebutton: {
+    backgroundColor: '#E8E8E8', 
+    padding: 13, 
+    borderRadius: 50, 
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    width: '100%'  
+  },
+  googlelogo: {
+    width: 20, 
+    height: 20, 
+    marginRight: 10
+  },
+  googlebuttontext: {
+    color: '#1E73BE', 
+    fontWeight: 'bold'
+  },
+  logintext: {
+    marginTop: 40, 
+    color: '#000000', 
+    fontSize: 15, 
+    textAlign: 'center'
+  },
+  logintextlink: {
+    color: '#1E73BE', 
+    fontWeight: 'bold'
+  }
 });
