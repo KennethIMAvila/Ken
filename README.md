@@ -53,3 +53,4 @@ A simple React Native application.
 ## Contributing
 
 Feel free to fork the repository and submit pull requests if you'd like to contribute to the project. :)
+# AppDevFinal
